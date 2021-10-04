@@ -24,14 +24,15 @@ def upload_img():
                                                filetypes=[("Image Files", ".png"),
                                                           ("Image Files", ".jpg")])
         FILE_PATH = file_path
+        new_img_pil = Image.open(file_path)
+        new_img = new_img_pil.resize((800, 600))
+        new_img = ImageTk.PhotoImage(new_img)
+        canvas.itemconfig(img, image=new_img)
+        canvas.photo = new_img
     except AttributeError:
         messagebox.showerror("No path chosen!", "Please choose a image.")
         return
-    new_img_pil = Image.open(file_path)
-    new_img = new_img_pil.resize((800, 600))
-    new_img = ImageTk.PhotoImage(new_img)
-    canvas.itemconfig(img, image=new_img)
-    canvas.photo = new_img
+
 
 
 def save_img():

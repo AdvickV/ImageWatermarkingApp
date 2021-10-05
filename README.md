@@ -2,7 +2,7 @@
 This is a Desktop app that allows you to add a text watermark to an image and save it to your computer.
 # Installation
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 # Usage
 - Upload an Image

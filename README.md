@@ -1,13 +1,14 @@
 # ImageWatermarkingApp
 This is a Desktop app that allows you to add a text watermark to an image and save it to your computer.
-## Libraries
-1.Pillow
+# Installation
 ```
-$ pip install Pillow
+pip install -r requirements.txt
 ```
-## Usage
+# Usage
 - Upload an Image
 - Enter the watermark text in the Entry
-- Choose the color of the watermark in the spinbox(scroll to see more colors)
+- Choose the color of the watermark in the combobox.
 - Add watermark
 - Save watermarked image
+# Preview
+<img src="preview.png">
